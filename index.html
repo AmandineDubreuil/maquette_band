@@ -29,6 +29,7 @@
             <li>CONTACT</li>
             <li>MORE</li>
           </ul>
+          <i id="search" class="fa-solid fa-magnifying-glass"></i>
         </div>
       </nav>
     </header>
@@ -83,9 +84,18 @@
         <h2>TOUR DATES</h2>
         <h3>Remember to book your tickets!</h3>
         <div id="mois">
-          <p class="table">September <span class="red">Sold out</span></p>
-          <p class="table">September <span class="red">Sold out</span></p>
-          <p class="table">September <span class="black rond">3</span></p>
+          <div id="sept">
+            <div class="table">September</div>
+            <div class="sold red">Sold out</div>
+          </div>
+          <div id="oct">
+            <div class="table">October</div>
+            <div class="sold red">Sold out</div>
+          </div>
+          <div id="nov">
+            <div class="table">November</div>
+            <div class="black rond">3</div>
+          </div>
         </div>
         <!-- *********************
     Main / section tour / images
@@ -140,18 +150,56 @@
             <p><i class="fa-solid fa-envelope"></i> Email: mail@mail.com</p>
           </div>
           <form action="mailto:amandine.dubreuil@hotmail.com" method="post">
-            <input type="text" name="name" id="name" placeholder="Name" />
-            <input type="text" name="email" id="email" placeholder="Email" />
             <input
+              class="inp"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+            />
+            <input
+              class="inp"
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Email"
+            />
+            <input
+              class="inp mess"
               type="text"
               name="message"
               id="message"
               placeholder="Message"
             />
-            <input class="black" type="submit" value="Send" name="envoi">
+            <input class="black send" type="submit" value="SEND" name="envoi" />
           </form>
+        </div>
+        <div id="maps">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380511.6920668976!2d-87.73196395!3d41.83373295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C%20Illinois%2C%20%C3%89tats-Unis!5e0!3m2!1sfr!2sfr!4v1669379767094!5m2!1sfr!2sfr"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </section>
     </main>
+    <!-- *********************
+    FOOTER
+    ************************-->
+    <footer>
+      <p>
+        <i class="fa-brands fa-facebook grey"></i>
+        <i class="fa-brands fa-instagram grey"></i>
+        <i class="fa-brands fa-square-snapchat grey"></i>
+        <i class="fa-brands fa-pinterest-p grey"></i>
+        <i class="fa-brands fa-twitter grey"></i>
+        <i class="fa-brands fa-linkedin grey"></i>
+      </p>
+      <p>Powered by <span>w3.css</span></p>
+    </footer>
   </body>
 </html>

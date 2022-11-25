@@ -267,7 +267,12 @@ RESPONSIVE losAngeles
   /* *****************
 RESPONSIVE band
 ******************* */
-  #flexCardBand {
+#band{
+  padding-left: 10rem;
+  padding-right: 10rem;
+}  
+
+#flexCardBand {
     flex-direction: row;
     justify-content: space-around;
   }
@@ -277,7 +282,12 @@ RESPONSIVE band
   /* *****************
 RESPONSIVE tour
 ******************* */
-  #cityFlex {
+#tour{
+  padding-left: 10rem;
+  padding-right: 10rem;
+
+}  
+#cityFlex {
     display: flex;
     justify-content: space-between;
   }
@@ -287,7 +297,12 @@ RESPONSIVE tour
   /* *****************
 RESPONSIVE contact
 ******************* */
-  #address {
+#contact{
+  padding-left: 10rem;
+  padding-right: 10rem;
+
+} 
+#address {
     width: 100%;
   }
   #addresEtForm {

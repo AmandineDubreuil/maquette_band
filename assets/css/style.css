@@ -55,7 +55,8 @@ Header
   display: flex;
   justify-content: space-between;
 }
-#burger ul, #search {
+#burger ul,
+#search {
   display: none;
 }
 
@@ -91,7 +92,7 @@ Main / section band
 }
 #flexCardBand .cards {
   width: 60%;
- }
+}
 
 #flexCardBand .cards p {
   padding: 1.5rem;
@@ -110,44 +111,43 @@ Main / section tour
 #tour h2 {
   color: rgb(255, 255, 255);
 }
-#tour h3{
+#tour h3 {
   padding-bottom: 2.5rem;
 }
-#mois{
+#mois {
   margin-bottom: 2rem;
 }
 #mois .table {
-    background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
   color: rgb(100, 100, 100);
   border: 1px solid rgb(200, 200, 200);
   padding: 0.5rem;
   margin: 0 0.5rem;
 }
-#sept{
+#sept {
   position: relative;
 }
-#sept .sold{
+#sept .sold {
   position: absolute;
   left: 7rem;
-  bottom: .4rem;
+  bottom: 0.4rem;
 }
-#oct{
-    position: relative;
-}     
-#oct .sold{
+#oct {
+  position: relative;
+}
+#oct .sold {
   position: absolute;
   left: 7rem;
-  bottom: .4rem;
+  bottom: 0.4rem;
 }
 
-#nov{
-position: relative;
-  
+#nov {
+  position: relative;
 }
-#mois .rond{
+#mois .rond {
   position: absolute;
   right: 1rem;
-  bottom: .6rem;
+  bottom: 0.6rem;
 }
 /* *****************
 Main / section tour / images
@@ -203,15 +203,15 @@ Main / section contact
 /* *****************
 Footer
 ******************* */
-footer{
+footer {
   padding: 2rem;
   color: rgb(100, 100, 100);
   text-align: center;
 }
-footer p{
+footer p {
   padding: 1rem;
 }
-footer span{
+footer span {
   text-decoration: underline;
 }
 /**********************************************
@@ -220,16 +220,57 @@ RESPONSIVE / FORMAT DESKTOP
 ***********************************************
 ***********************************************/
 @media screen and (min-width: 576px) {
-#burger i{
-  display: none;
-}
-  #burger ul, #search{
+  /* *****************
+RESPONSIVE Header
+******************* */
+
+  #relat {
+    position: relative;
+  }
+  #navHeader {
+    position: fixed;
+    width: 96%;
+    justify-content: space-between;
+  }
+  #burger .burg {
+    display: none;
+  }
+  #burger ul {
     display: flex;
   }
-#burger ul{
-  list-style: none;
-  
-}
+  #burger ul {
+    list-style: none;
+  }
+  #burger li {
+    padding: 0 2rem;
+  }
+  #search {
+    display: block;
+  }
+  #burger {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* *****************
+RESPONSIVE losAngeles
+******************* */
+
+  #losAngelesText {
+    display: block;
+  }
+  #losAngeles{
+    height: 90vh;
+  }
+
+  /* *****************
+RESPONSIVE band
+******************* */
+
+
+
+
+
 
 }
-

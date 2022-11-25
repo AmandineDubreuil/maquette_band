@@ -260,17 +260,57 @@ RESPONSIVE losAngeles
   #losAngelesText {
     display: block;
   }
-  #losAngeles{
+  #losAngeles {
     height: 90vh;
   }
 
   /* *****************
 RESPONSIVE band
 ******************* */
+  #flexCardBand {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #flexCardBand .cards {
+    width: 20%;
+  }
+  /* *****************
+RESPONSIVE tour
+******************* */
+  #cityFlex {
+    display: flex;
+    justify-content: space-between;
+  }
+  #cityFlex .cityCards {
+    width: 32%;
+  }
+  /* *****************
+RESPONSIVE contact
+******************* */
+  #address {
+    width: 100%;
+  }
+  #addresEtForm {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+  }
+  #addresEtForm form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
-
-
-
-
-
+  #addresEtForm .inp {
+    width: 44%;
+  }
+  #addresEtForm .mess {
+    width: 100%;
+  }
+  #addresEtForm .send {
+    text-align: end;
+  }
+  #maps {
+    text-align: center;
+    width: 100%;
+  }
 }

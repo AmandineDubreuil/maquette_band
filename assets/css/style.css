@@ -8,6 +8,7 @@ Général
 * {
   margin: 0;
   padding: 0;
+  /* box-sizing: border-box; */
   font-family: "lato";
   font-size: 1rem;
 }
@@ -37,14 +38,19 @@ h3 {
   background-color: rgb(243, 67, 52);
   color: rgb(255, 255, 255);
   padding: 0.2rem 0.5rem;
+  margin-left: 1.5rem;
   width: 4rem;
 }
 .grey {
   color: rgb(100, 100, 100);
 }
-.rond {
+.pill {
   padding: 0.1rem 0.3rem;
   border-radius: 50%;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  float: right;
+  margin-right: 1rem;
 }
 /* *****************
 Header
@@ -107,6 +113,7 @@ Main / section tour
 ******************* */
 #tour {
   background-color: rgb(0, 0, 0);
+  padding: 1rem;
 }
 #tour h2 {
   color: rgb(255, 255, 255);
@@ -114,46 +121,22 @@ Main / section tour
 #tour h3 {
   padding-bottom: 2.5rem;
 }
-#mois {
-  margin-bottom: 2rem;
-}
-#mois .table {
+#calendar {
   background-color: rgb(255, 255, 255);
-  color: rgb(100, 100, 100);
-  border: 1px solid rgb(200, 200, 200);
+}
+#calendar div {
   padding: 0.5rem;
-  margin: 0 0.5rem;
+  border-bottom: 1px solid rgb(200, 200, 200);
 }
-#sept {
-  position: relative;
-}
-#sept .sold {
-  position: absolute;
-  left: 7rem;
-  bottom: 0.4rem;
-}
-#oct {
-  position: relative;
-}
-#oct .sold {
-  position: absolute;
-  left: 7rem;
-  bottom: 0.4rem;
+#calendar div:nth-child(3) {
+  border-bottom: none;
 }
 
-#nov {
-  position: relative;
-}
-#mois .rond {
-  position: absolute;
-  right: 1rem;
-  bottom: 0.6rem;
-}
 /* *****************
 Main / section tour / images
 ******************* */
 .cityCards {
-  margin: 1rem 0.5rem;
+  margin: 1rem 0rem;
   background-color: rgb(255, 255, 255);
 }
 .cardsImg {
@@ -177,7 +160,10 @@ Main / section tour / images
 /* *****************
 Main / section contact
 ******************* */
-
+.addIcone {
+  width: 2rem;
+  display: inline-block;
+}
 #addresEtForm p {
   font-size: 1.15rem;
   padding: 0.5rem;
@@ -187,18 +173,21 @@ Main / section contact
   display: flex;
   flex-direction: column;
 }
-#addresEtForm .inp {
-  padding: 0.5rem;
-  border: 1px solid rgb(200, 200, 200);
+#addresEtForm input {
+  width: 100%;
 }
 #addresEtForm .mess {
   margin-top: 0.4rem;
 }
-#addresEtForm .send {
+#addresEtForm #send {
   margin-top: 0.8rem;
   padding: 0.5rem 1rem;
-  width: 5rem;
-  align-self: flex-end;
+  width: fit-content;
+  border: none;
+}
+#addresEtForm div:last-child {
+  display: flex;
+  justify-content: flex-end;
 }
 /* *****************
 Footer
@@ -259,20 +248,27 @@ RESPONSIVE losAngeles
 
   #losAngelesText {
     display: block;
+    padding-bottom: 3rem;
+  }
+  #losAngelesText p {
+    text-align: center;
   }
   #losAngeles {
     height: 90vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
   }
 
   /* *****************
 RESPONSIVE band
 ******************* */
-#band{
-  padding-left: 10rem;
-  padding-right: 10rem;
-}  
+  #band {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
 
-#flexCardBand {
+  #flexCardBand {
     flex-direction: row;
     justify-content: space-around;
   }
@@ -282,12 +278,11 @@ RESPONSIVE band
   /* *****************
 RESPONSIVE tour
 ******************* */
-#tour{
-  padding-left: 10rem;
-  padding-right: 10rem;
-
-}  
-#cityFlex {
+  #tour {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  #cityFlex {
     display: flex;
     justify-content: space-between;
   }
@@ -297,19 +292,19 @@ RESPONSIVE tour
   /* *****************
 RESPONSIVE contact
 ******************* */
-#contact{
-  padding-left: 10rem;
-  padding-right: 10rem;
-
-} 
+  #contact {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+#addresEtForm {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+}
 #address {
-    width: 100%;
-  }
-  #addresEtForm {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 3rem;
-  }
+  width: 100%;
+}
   #addresEtForm form {
     flex-direction: row;
     flex-wrap: wrap;
@@ -323,6 +318,7 @@ RESPONSIVE contact
   }
   #addresEtForm .send {
     text-align: end;
+    align-self: flex-end;
   }
   #maps {
     text-align: center;

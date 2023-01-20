@@ -296,27 +296,19 @@ RESPONSIVE contact
     padding-left: 15%;
     padding-right: 15%;
   }
-}
-#addresEtForm {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 3rem;
-}
-#address {
-  width: 100%;
-}
-  #addresEtForm form {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
 
-  #addresEtForm .inp {
-    width: 44%;
+  #addresEtForm {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3rem;
   }
-  #addresEtForm .mess {
-    width: 100%;
+  #addresEtForm #address, #addresEtForm form {
+    width: 50%;
   }
-  #addresEtForm .send {
+  #addresEtForm form div:first-child{
+    display: flex;
+  }
+    #addresEtForm .send {
     text-align: end;
     align-self: flex-end;
   }
